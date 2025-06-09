@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8">
+    <title>Daniel Rusev's Git Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+  
+
+       body {
+
+        font-family: 'Times New Roman', Times, serif;
+
+        background-color: lightgray;
+
+        color:#333;
+
+        line-height: 1.6;
+
+       }
+
+       nav {
+
+            background-color: greenyellow !important;
+
+       }
+
+
+
+       nav ul {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            list-style-type: none;
+
+            gap: 1rem;
+
+       }
+
+
+
+       nav a {
+
+            color: blue !important;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            padding: 0.4rem 0.8rem;
+
+            border-radius: 8px;
+
+            transition: background 0.3s;
+
+       }
+
+
+
+       nav a:hover {
+
+            background-color: rgba(255, 255, 255, 0.2);
+
+       }
+
+       header {
+         text-align: center;
+        
+         padding: 2rem 1rem;
+
+         background-color: lightgray !important;
+
+         border: 1px solid blue !important;
+
+       }
+       header img {
+
+          width: 400px;
+
+          height: auto;
+
+          border-radius: 8px;
+
+          margin-top: 1rem;
+
+       }
+       main {
+
+          max-width: 800px;
+
+          margin: 0 auto;
+
+          padding: 20px;
+
+       }
+
+
+
+       section {
+
+          margin-bottom: 2rem;
+
+       }
+       h2 {
+
+          margin-bottom: 0.5rem;
+
+          color: green;
+
+       }
+       ul {
+
+          margin-top: 1rem;
+
+          list-style-type: disc;
+
+          padding-left: 1.5rem;
+
+       }
+       
+       table {
+
+           width: 100%;
+
+          border-collapse: collapse;
+
+          margin-top: 1rem;
+
+          background-color: blue !important;
+
+          border: 1px solid blue !important;
+
+       }
+
+
+
+       table th, table td {
+
+          border: 1px solid greenyellow !important;
+
+          padding: 10px;
+
+          text-align: left;
+
+       }
+
+
+
+       table th {
+
+          background-color: blue !important;
+
+          color: greenyellow !important;
+
+       }
+       a {
+
+          color: #00796b !important;
+
+          text-decoration: none;
+
+       }
+
+
+
+       a:hover {
+
+          text-decoration: underline;
+
+       }
+       
+       form {
+
+          background-color: white !important;
+
+          padding: 1rem;
+
+          border-radius: 8px;
+
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+       }
+
+
+
+       form label {
+
+          display: block;
+
+          margin: 0.5rem 0 0.2rem;
+
+         font-weight: bold;
+
+       }
+
+
+
+       form input, form textarea {
+
+          width: 100%;
+
+          padding: 0.5rem;
+
+          border: 1px solid greenyellow !important;
+
+          border-radius: 8px;
+
+          margin-bottom: 1rem;
+
+       }
+
+
+
+       form button {
+
+          background-color: blue !important;
+
+          color: greenyellow !important;
+
+          padding: 0.6rem 1.2rem;
+
+          border: none;
+
+          border-radius: 8px;
+
+          cursor: pointer;
+
+          font-size: 1rem;
+
+       }
+
+
+
+       form button:hover {
+
+           background-color: blue !important;
+
+       }
+       footer {
+
+          text-align: center;
+
+          padding: 1rem;
+
+          margin-top: 2rem;
+
+          border-top: 1px solid navy !important;
+
+          font-size: 0.9rem;
+
+       }
+       
+
+       .home-button {
+
+          position: fixed;
+
+          bottom: 20px;
+
+          right: 20px;
+
+          background-color: navy !important;
+
+          color: greenyellow !important;
+
+          font-size: 24px;
+
+          padding: 12px 16px;
+
+          border-radius: 50%;
+
+          text-align: center;
+
+          text-decoration: none;
+
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+           transition: background 0.3s ease;
+
+           z-index: 1000;
+
+       }
+
+
+
+       .home-button:hover {
+
+          background-color: navy !important;
+
+       }
+
+       .hero {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 3rem 1rem;
+      border-radius: 1rem;
+      text-align: center;
+    }
+
+        .hero h1.display-4 {
+            color: lightgreen;
+        }
+
+        .hero p.lead {
+            color: lightgreen;
+        }
+
+       @media (max-width: 600px) {
+
+       h1 {
+
+           font-size: 2rem;
+
+       }
+
+
+
+       nav ul {
+
+           flex-direction: column;
+
+           align-items: center;
+
+       }
+
+
+
+       table th, table td {
+
+           font-size: 0.9rem;
+
+       }
+
+
+
+       form button {
+
+           width: 100%;
+
+       }
+
+
+
+       .home-button {
+
+           font-size: 20px;
+
+           padding: 10px 14px;
+
+       }
+       
+    }
+    </style>
+  </head>
+  <body id="top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-person-square"></i> Daniel Rusev's Personal Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About Me</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#coursegoals">Course Goals</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#hobbies">Hobbies</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#funfact">Fun Fact</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a></li>
+        </ul>
+       </div>
+    </div>
+    </nav>
+
+    <div style="height: 100px;"></div>
+
+    <div class="container py-5">
+       <div class="hero mb-5">
+            <h1 class="display-4 text-lightgreen"><i class="bi bi-person-square"></i> Daniel Rusev</h1>
+            <img src="me.png.png" alt= "A photo of Daniel Rusev" class="img-fluid rounded-4 mb-3" width="300" height="300">
+            <p class="lead text-lightgreen">Daniel Rusev's Discord:danielrusev127.</p>
+       </div>
+    </div>
+
+  <main>
+  <div class="mt-5" id="aboutme">
+    <h2 class="display-4 text-lightgreen"><i class="bi bi-person-badge me-2"></i> About Me</h2>
+            <p class="lead text-dark"> Hello! My name is Daniel Rusev. I am a CIT student at Lewis University doing the 3+1 program through College of DuPage. This is my last year at Lewis University as I graduate in December. This is my first time using and learning HTML to design websites. </p>
+    </div>
+
+  <div class="mt-5" id="coursegoals">
+    <h2 class="display-4 text-lightgreen"><i class="bi bi-mortarboard me-2"></i> Course Goals</h2>
+            <ul class="list-group">
+                <li class="list-group-item"> Learn how to code using HTML, Javascript, and any other tools/languages relating to web programming.</li>
+                <li class="list-group-item"> Apply what I have learned using HTML to design and program websites.</li>
+                <li class="list-group-item"> Learn to problem solve any issues I encounter while programming with HTML.</li>
+            </ul>
+    </div>
+
+  <div class="mt-5" id="hobbies">
+    <h2 class="display-4 text-lightgreen"><i class="bi bi-heart me-2"></i> My Hobbies</h2>
+            <ul class="list-group">
+                <li class="list-group-item"> Cooking and baking: <a href="https://en.wikipedia.org/wiki/Cooking">Cooking</a></li>
+                <li class="list-group-item"> Lifting weights: <a href="https://en.wikipedia.org/wiki/Weightlifting">Weight Lifting</a></li>
+                <li class="list-group-item"> Practicing old and new concepts relating to CIT or CIS: <a href="https://en.wikipedia.org/wiki/Information_technology">Information Technology</a></li>
+            </ul>
+    </div>
+
+  <div class="mt-5" id="funfact">
+    <h2 class="display-4 text-lightgreen"><i class="bi bi-star me-2"></i> Fun Fact About Me</h2>
+            <p class="lead text-dark">I currently work at Edward Hospital as a cook in addition to attending Lewis University. I am hoping to eventually join their IT department, and gain some work experience in the IT field. </p>
+    </div>
+
+    <div class="mt-5" id="contact">
+      <h2 class="display-4 text-lightgreen"><i class="bi bi-envelope me-2"></i> Contact Me</h2>
+            <form action="/submit" method="POST" class="text-dark">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="comments" class="form-label" >Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+    </div>
+    </main>
+
+    <a href="#top" class="home-button" title="Back to the Top"><i class="bi bi-house-fill"></i></a>
+
+  <footer class="text-center mt-5 py-4">
+    <div class="container">
+        <p class="mb-1">&copy; 2025 Daniel Rusev. All rights reserved.</p>
+        <p class="mb-0"><i class="bi bi-geo-alt-fill"></i> Washington St, Naperville, Illinois</p>
+    </div>
+  </footer>
+
+  <script>
+    // Only simulation of sending email. Will not actually send an email, only simulate it. //
+
+    const userEmail = [];
+
+    function sendEmail() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const comments = document.getElementById("comments").value;
+
+        alert(`Thank you ${name}. I have recieved your email.`);
+
+        document.querySelector("form").reset();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector("form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            sendEmail();
+        });
+    });
+  </script>
+  </body>
+</html>
